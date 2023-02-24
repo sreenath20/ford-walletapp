@@ -1,5 +1,6 @@
 package com.walletapp;
 
+import java.util.Collection;
 import java.util.List;
 
 public interface WalletService {
@@ -14,5 +15,5 @@ public interface WalletService {
     Double withdrawFundsFromWalletById(Integer walletById,Double amount) throws WalletException;
     Boolean fundTransfer(Integer fromWalletId,Integer toWalletId,Double amount)throws WalletException;
 
-    List<WalletDto> getAllWallets();
+    Collection<WalletDto> getAllWallets();
 }
